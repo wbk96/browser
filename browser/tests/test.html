@@ -1,0 +1,1054 @@
+<!-- <div id="myDiv" class="container">Hello, World!</div>
+<canvas id="myCanvas"></canvas>
+<script>
+  console.log('UserAgent:', navigator.userAgent);
+  console.log('Chrome exists:', !!window.chrome);
+  console.log('Screen width:', screen.width);
+  console.log('Plugins length:', navigator.plugins.length);
+  console.log('MimeTypes length:', navigator.mimeTypes.length);
+  console.log('getElementById toString:', document.getElementById.toString());
+  
+  // 测试 WebGL
+  var canvas = document.getElementById('myCanvas');
+  if (canvas) {
+    var gl = canvas.getContext('webgl');
+    if (gl) {
+      console.log('WebGL vendor:', gl.getParameter(7936));
+      console.log('WebGL renderer:', gl.getParameter(7937));
+    }
+  }
+  
+  // 测试 PerformanceObserver
+  if (typeof PerformanceObserver !== 'undefined') {
+    var observer = new PerformanceObserver((list) => {
+      console.log('Performance entries:', list.getEntries().length);
+    });
+    observer.observe({ entryTypes: ['resource'] });
+  }
+</script> -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="https://wsdkdl.migu.cn:8443/music/paramdialog1/">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://wsdkdl.migu.cn:8443">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+        <script>
+            var __url_res = 'https://wsdkdl.migu.cn:8443/music/paramdialog1';
+            var __url_bin = 'https://wsdkdl.migu.cn:8443/209381fa899541a193e6c6a1acab745d/1744216222711/netsdk_b.bin?v=1lvGq5dPN3Ko1RCprrBoG5';
+            var __s = '53c7b971a4c342b3b26bbd3f63b8930e';
+            var __url_prbpt = 'https://wsdkdl.migu.cn:8443/rocher/739018560d994569a889cfb0526bcc5c.js?v=1lvGq5dPN3Ko1RCprrBoG5';
+            window.parent.postMessage('{"msgtype": "init2", "__s":"' + __s + '"}', '*');
+        </script>
+        <link rel="stylesheet" type="text/css" href="https://wsdkdl.migu.cn:8443/music/paramdialog1/style.css?v=1lvGq5dPN3Ko1RCprrBoG5">
+    </head>
+    <script crossorigin src="https://wsdkdl.migu.cn:8443/rocher/websdkutil.js?v=1lvGq5dPN3Ko1RCprrBoG5"></script>
+    <script>
+        function smg(_0x2ce4d7) {
+            window["\u0073\u0065\u0073\u0073\u0069\u006f\u006e\u0053\u0074\u006f\u0072\u0061\u0067\u0065"]["\u0065\u0072\u0072"] = _0x2ce4d7["\u0074\u0061\u0072\u0067\u0065\u0074"]["\u006f\u0075\u0074\u0065\u0072\u0048\u0054\u004d\u004c"];
+            var _0xfa33fe = document["\u0063\u0072\u0065\u0061\u0074\u0065\u0045\u006c\u0065\u006d\u0065\u006e\u0074"]("tpircs".split("").reverse().join(""));
+            var _0x15dacb = _0x2ce4d7["\u0074\u0061\u0072\u0067\u0065\u0074"]["\u0073\u0072\u0063"];
+            _0xfa33fe["\u0073\u0072\u0063"] = _0x15dacb["\u0073\u006c\u0069\u0063\u0065"](0x264c3 ^ 0x264c3, _0x15dacb["\u0069\u006e\u0064\u0065\u0078\u004f\u0066"]("\u003d") + (0x1b6fe ^ 0x1b6ff)) + Math['random']();
+            _0xfa33fe["\u0063\u0072\u006f\u0073\u0073\u004f\u0072\u0069\u0067\u0069\u006e"] = "\u0061\u006e\u006f\u006e\u0079\u006d\u006f\u0075\u0073";
+            document["\u0068\u0065\u0061\u0064"]['appendChild'](_0xfa33fe);
+        }
+    </script>
+    <script crossorigin integrity="sha384-Mwl9WaaPQ1wgmH/Gj9NHz2o1v36tAQOlRHvafrOe3Qu0f2Dv6+OEZPNdGRH7XiMI" onerror="smg(event)" src="https://wsdkdl.migu.cn:8443/209381fa899541a193e6c6a1acab745d/1744216222711/netsdk_b.js?v=1lvGq5dPN3Ko1RCprrBoG5"></script>
+    <link rel="stylesheet" type="text/css" href="https://wsdkdl.migu.cn:8443/music/paramdialog1/common2/diy.css?v=1lvGq5dPN3Ko1RCprrBoG5">
+</head>
+<body>
+    <div class="payDetail" id="onekey-payDetail">
+        <div class="close">
+            <img src="img/closeNavBtn_m.png" id="onekey-close">
+        </div>
+        <div class="pay-info-text">
+            <img class="icon" src="img/title_icon.png">
+            <div class="pay-info-text-detail"></div>
+        </div>
+        <div class="content">
+            <div class="notice">
+                <span id="onekey-notice"></span>
+            </div>
+            <div class="phone-info">
+                <span class="phone-info-star" id="onekey-payPhone"></span>
+            </div>
+            <div class="okPay">
+                <a href="javascript:;" id="onekey-okPay">确认开通</a>
+            </div>
+            <div class="title">
+                <span class="price-num" id="onekey-fee"></span>
+                <span class="fun-price"></span>
+            </div>
+            <div class="tipsbox">
+                <p class="tips" id="tips"></p>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="img/logo.png" class="migulogo" id="onekey-logo">
+                </div>
+                <a href="javascript: void(0)" class="friendPay" id="onekey-friendPay" style="display: none;">好友代付 >></a>
+            </div>
+        </div>
+        <div class="rights">
+            <ul>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_1.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_2.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_3.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="payDetail" id="sms-payDetail">
+        <div class="close">
+            <img src="img/closeNavBtn_m.png" id="sms-close">
+        </div>
+        <div class="pay-info-text">
+            <img class="icon" src="img/title_icon.png">
+            <div class="pay-info-text-detail"></div>
+        </div>
+        <div class="content">
+            <div class="notice">
+                <span id="sms-notice"></span>
+            </div>
+            <div class="payTip">
+                <span class="phone-info-star" id="sms-payPhone"></span>
+            </div>
+            <div class="inputArea inputSmsArea">
+                <div class="inputPhone">
+                    <input type="number" id="sms-sms-input" maxlength="6" placeholder="输入短信验证码" pattern="\d*">
+                </div>
+                <a href="javascript:;" id="sms-get-code" class="sms-code-bright">获取验证码</a>
+            </div>
+            <div class="okPay">
+                <a href="javascript:;" id="sms-okPay" class="textgray">确认开通</a>
+            </div>
+            <div class="title">
+                <span class="price-num" id="sms-fee"></span>
+                <span class="fun-price"></span>
+            </div>
+            <div class="tipsbox">
+                <p class="tips" id="tips"></p>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="img/logo.png" class="migulogo" id="sms-logo">
+                </div>
+                <a href="javascript: void(0)" class="friendPay" id="sms-friendPay" style="display: none;">好友代付 >></a>
+            </div>
+        </div>
+        <div class="rights">
+            <ul>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_1.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_2.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_3.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="payDetail" id="audio-payDetail">
+        <div class="close">
+            <img src="img/closeNavBtn_m.png" id="audio-close">
+        </div>
+        <div class="pay-info-text">
+            <img class="icon" src="img/title_icon.png">
+            <div class="pay-info-text-detail"></div>
+        </div>
+        <div class="content">
+            <div class="notice">
+                <span id="audio-notice"></span>
+            </div>
+            <div class="payTip">
+                <span class="phone-info-star" id="audio-payPhone"></span>
+            </div>
+            <div class="inputArea inputSmsArea">
+                <div class="inputPhone">
+                    <input type="text" id="audio-audio-input" maxlength="4" placeholder="输入语音验证码">
+                </div>
+                <a href="javascript:;" id="audio-get-code" class="audio-code-bright">语音验证码</a>
+            </div>
+            <div class="okPay">
+                <a href="javascript:;" id="audio-okPay" class="textgray">确认开通</a>
+            </div>
+            <div class="title">
+                <span class="price-num" id="audio-fee"></span>
+                <span class="fun-price"></span>
+            </div>
+            <div class="tipsbox">
+                <p class="tips" id="tips"></p>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="img/logo.png" class="migulogo" id="audio-logo">
+                </div>
+                <a href="javascript: void(0)" class="friendPay" id="audio-friendPay" style="display: none;">好友代付 >></a>
+            </div>
+        </div>
+        <div class="rights">
+            <ul>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_1.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_2.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_3.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="payDetail" id="pic-payDetail">
+        <div class="close">
+            <img src="img/closeNavBtn_m.png" id="pic-close">
+        </div>
+        <div class="pay-info-text">
+            <img class="icon" src="img/title_icon.png">
+            <div class="pay-info-text-detail"></div>
+        </div>
+        <div class="content">
+            <div class="notice">
+                <span id="pic-notice"></span>
+            </div>
+            <div class="phone-info">
+                <span class="phone-info-star" id="pic-payPhone"></span>
+            </div>
+            <div class="img-code-wrap clearfix">
+                <input type="text" placeholder="请输入验证码" class="img-code-input" maxlength="4" id="pic-pic-input">
+                <a href="javascript: void(0);">
+                    <img alt="验证码" width="83" height="32" class="img-code" id="pic-refresh-code">
+                </a>
+            </div>
+            <div class="okPay">
+                <a href="javascript:;" id="pic-okPay" class="textgray">确认开通</a>
+            </div>
+            <div class="title">
+                <span class="price-num" id="pic-fee"></span>
+                <span class="fun-price"></span>
+            </div>
+            <div class="tipsbox">
+                <p class="tips" id="tips"></p>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="img/logo.png" class="migulogo" id="pic-logo">
+                </div>
+                <a href="javascript: void(0)" class="friendPay" id="pic-friendPay" style="display: none;">好友代付 >></a>
+            </div>
+        </div>
+        <div class="rights">
+            <ul>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_1.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_2.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_3.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="payDetail" id="logic-payDetail">
+        <div class="close">
+            <img src="img/closeNavBtn_m.png" id="logic-close">
+        </div>
+        <div class="pay-info-text">
+            <img class="icon" src="img/title_icon.png">
+            <div class="pay-info-text-detail"></div>
+        </div>
+        <div class="content">
+            <div class="notice">
+                <span id="logic-notice"></span>
+            </div>
+            <div class="phone-info">
+                <span class="phone-info-star" id="logic-payPhone"></span>
+            </div>
+            <div class="img-code-wrap clearfix">
+                <input type="text" placeholder="请输入答案" class="img-code-input" maxlength="10" id="logic-logic-input">
+                <a href="javascript: void(0);">
+                    <img alt="验证码" width="83" height="32" class="img-code" id="logic-refresh-code">
+                </a>
+            </div>
+            <div class="okPay">
+                <a href="javascript:;" id="logic-okPay" class="textgray">确认开通</a>
+            </div>
+            <div class="title">
+                <span class="price-num" id="logic-fee"></span>
+                <span class="fun-price"></span>
+            </div>
+            <div class="tipsbox">
+                <p class="tips" id="tips"></p>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="img/logo.png" class="migulogo" id="logic-logo">
+                </div>
+                <a href="javascript: void(0)" class="friendPay" id="logic-friendPay" style="display: none;">好友代付 >></a>
+            </div>
+        </div>
+        <div class="rights">
+            <ul>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_1.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_2.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_3.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="payDetail" id="friendPay-payDetail">
+        <div class="close">
+            <img src="img/closeNavBtn_m.png" id="friendPay-close">
+        </div>
+        <div class="pay-info-text">
+            <img class="icon" src="img/title_icon.png">
+            <div class="pay-info-text-detail"></div>
+        </div>
+        <div class="content">
+            <div class="notice">
+                <span id="friendPay-notice"></span>
+            </div>
+            <div class="payTip">
+                <input type="text" placeholder="请输入好友手机号码" class="friend-input" id="friend-input">
+            </div>
+            <div class="inputArea inputSmsArea">
+                <div class="inputPhone">
+                    <input type="text" id="friendPay-sms-input" maxlength="6" placeholder="输入短信验证码">
+                </div>
+                <a href="javascript:;" id="friendPay-get-code" class="sms-code-bright">获取验证码</a>
+            </div>
+            <div class="okPay">
+                <a href="javascript:;" id="friendPay-okPay" class="textgray">确认开通</a>
+            </div>
+            <div class="title">
+                <span class="price-num" id="friendPay-fee"></span>
+                <span class="fun-price"></span>
+            </div>
+            <div class="tipsbox">
+                <p class="tips" id="tips"></p>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="img/logo.png" class="migulogo" id="friendPay-logo">
+                </div>
+                <a href="javascript: void(0)" class="friendPay" id="friendPay-back">返回上一页面 &lt;&lt;</a>
+            </div>
+        </div>
+        <div class="rights">
+            <ul>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_1.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_2.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_3.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="payDetail" id="complex-payDetail">
+        <div class="close">
+            <img src="img/closeNavBtn_m.png" id="complex-close">
+        </div>
+        <div class="pay-info-text">
+            <img class="icon" src="img/title_icon.png">
+            <div class="pay-info-text-detail"></div>
+        </div>
+        <div class="content">
+            <div class="notice">
+                <span id="complex-notice"></span>
+            </div>
+            <div class="phone-info">
+                <span class="phone-info-star" id="complex-payPhone"></span>
+            </div>
+            <div class="complex-question clearfix">
+                <span class="complex-question-text">请选出相同图形 </span>
+                <a href="javascript: void(0);">
+                    <img alt="问题" class="complex-question-img" id="complex-quest-img">
+                </a>
+            </div>
+            <div class="complex-answer">
+                <a src="javascript:;">
+                    <img alt="答案1" class="complex-answer-item" id="answer1">
+                </a>
+                <a src="javascript:;">
+                    <img alt="答案2" class="complex-answer-item" id="answer2">
+                </a>
+                <a src="javascript:;">
+                    <img alt="答案3" class="complex-answer-item" id="answer3">
+                </a>
+                <a src="javascript:;">
+                    <img alt="答案4" class="complex-answer-item" id="answer4">
+                </a>
+            </div>
+            <div class="okPay">
+                <a href="javascript:;" id="complex-okPay" class="textgray">确认开通</a>
+            </div>
+            <div class="title">
+                <span class="price-num" id="complex-fee"></span>
+                <span class="fun-price"></span>
+            </div>
+            <div class="tipsbox">
+                <p class="tips" id="tips"></p>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="img/logo.png" class="migulogo" id="complex-logo">
+                </div>
+                <a href="javascript: void(0)" class="friendPay" id="complex-friendPay" style="display: none;">好友代付 >></a>
+            </div>
+        </div>
+        <div class="rights">
+            <ul>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_1.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_2.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_3.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="payDetail" id="slide-payDetail">
+        <div class="close">
+            <img src="img/closeNavBtn_m.png" id="slide-close">
+        </div>
+        <div class="pay-info-text">
+            <img class="icon" src="img/title_icon.png">
+            <div class="pay-info-text-detail"></div>
+        </div>
+        <div class="content">
+            <div class="phone-info" id="payInfoDiv">
+                <span class="phone-info-star" id="slide-payPhone"></span>
+            </div>
+            <canvas id="canvas-slide" class="canvas-slide"></canvas>
+            <div class="slider-block-wrap">
+                <div id="slider-block" class="slider-block" style="left: 0px;">
+                    <span class="slider-block-style"></span>
+                </div>
+            </div>
+            <div class="notice">
+                <span id="slide-notice">向右拖动滑块或滚动条填充拼图</span>
+            </div>
+            <div class="title">
+                <span class="price-num" id="slide-fee"></span>
+                <span class="fun-price"></span>
+            </div>
+            <div class="tipsbox">
+                <p class="tips" id="tips"></p>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="img/logo.png" class="migulogo" id="slide-logo">
+                </div>
+                <a href="javascript: void(0)" class="friendPay" id="slide-friendPay" style="display: none;">好友代付 >></a>
+            </div>
+        </div>
+        <div class="rights">
+            <ul>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_1.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_2.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_3.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="payDetail" id="multiCountPic-payDetail">
+        <div class="close">
+            <img src="img/closeNavBtn_m.png" id="multiCountPic-close">
+        </div>
+        <div class="pay-info-text">
+            <img class="icon" src="img/title_icon.png">
+            <div class="pay-info-text-detail"></div>
+        </div>
+        <div class="content">
+            <div class="notice">
+                <span id="multiCountPic-notice"></span>
+            </div>
+            <div class="phone-info">
+                <span class="phone-info-star" id="multiCountPic-payPhone"></span>
+            </div>
+            <div class="multi-count clearfix" id="multi-desc">
+                <span>请选出答案为</span>
+                <div class="multi-count-quest" id="multi-count-quest"></div>
+                <span>的所有图片 </span>
+                <a href="javascript:;" class="multi-refresh-img">
+                    <img id="multi-refresh" class="multi-refresh">
+                </a>
+            </div>
+            <div id="multi-answer">
+                <div class="multi-answer">
+                    <a class="out-answer">
+                        <div class="multi-answer-item" id="multi-answer1"></div>
+                    </a>
+                    <a class="out-answer out">
+                        <div class="multi-answer-item" id="multi-answer2"></div>
+                    </a>
+                    <a class="out-answer out">
+                        <div class="multi-answer-item" id="multi-answer3"></div>
+                    </a>
+                    <a class="out-answer">
+                        <div class="multi-answer-item" id="multi-answer4"></div>
+                    </a>
+                    <a class="out-answer out">
+                        <div class="multi-answer-item" id="multi-answer5"></div>
+                    </a>
+                    <a class="out-answer out">
+                        <div class="multi-answer-item item6" id="multi-answer6"></div>
+                    </a>
+                </div>
+                <div class="fail-refresh" id="fail-refresh">
+                    <div class="fail-img">
+                        <img id="fail-img">
+                        <p>网络开小差啦，点我刷新</p>
+                    </div>
+                </div>
+            </div>
+            <div class="okPay">
+                <a href="javascript:;" id="multiCountPic-okPay" class="textgray">确认开通</a>
+            </div>
+            <div class="title">
+                <span class="price-num" id="multiCountPic-fee"></span>
+                <span class="fun-price"></span>
+            </div>
+            <div class="tipsbox">
+                <p class="tips" id="tips"></p>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="img/logo.png" class="migulogo" id="multiCountPic-logo">
+                </div>
+                <a href="javascript: void(0)" class="friendPay" id="multiCountPic-friendPay" style="display: none;">好友代付 >></a>
+            </div>
+        </div>
+        <div class="rights">
+            <ul>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_1.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_2.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_3.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="payDetail" id="sim-payDetail">
+        <div class="close">
+            <img src="img/closeNavBtn_m.png" id="sim-close">
+        </div>
+        <div class="pay-info-text">
+            <img class="icon" src="img/title_icon.png">
+            <div class="pay-info-text-detail"></div>
+        </div>
+        <div class="content">
+            <div class="notice">
+                <span id="sim-notice"></span>
+            </div>
+            <div class="phone-info">
+                <span class="phone-info-star" id="sim-payPhone"></span>
+            </div>
+            <div class="okPay">
+                <a href="javascript:;" id="sim-okPay">sim认证支付</a>
+            </div>
+            <div class="title">
+                <span class="price-num" id="sim-fee"></span>
+                <span class="fun-price"></span>
+            </div>
+            <div class="tipsbox">
+                <p class="tips" id="tips"></p>
+            </div>
+            <div class="sim-tip">
+                <a href="https://yzhk.cmpassport.com/simpub/simquick/index.html" class="reset" target="_blank" referrerpolicy="no-referrer" rel="noopener noreferrer" style="text-decoration: underline;">重置sim口令</a>
+                <p class="sim-tip">温馨提示：点击“sim认证支付”，即可根据手机提示进行话费支付验证。若忘记sim口令或口令被锁定，可点击“重置sim口令”进行重置。</p>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="img/logo.png" class="migulogo" id="sim-logo">
+                </div>
+                <a href="javascript: void(0)" class="friendPay" id="sim-friendPay" style="display: none;">好友代付 >></a>
+            </div>
+        </div>
+        <div class="rights">
+            <ul>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_1.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_2.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_3.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="payDetail" id="drop-payDetail">
+        <div class="close">
+            <img src="img/closeNavBtn_m.png" id="drop-close">
+        </div>
+        <div class="pay-info-text">
+            <img class="icon" src="img/title_icon.png">
+            <div class="pay-info-text-detail"></div>
+        </div>
+        <div class="content">
+            <div class="phone-info" id="payInfoDropDiv">
+                <span class="phone-info-star" id="drop-payPhone"></span>
+            </div>
+            <div class="drop-area">
+                <div id="drop-pic"></div>
+                <div class="notice" id="drop-notice">向右拖动滑块并接住下落缺块</div>
+                <canvas id="canvas-drop" class="canvas-drop"></canvas>
+            </div>
+            <div class="title">
+                <span class="price-num" id="drop-fee"></span>
+                <span class="fun-price"></span>
+            </div>
+            <div class="tipsbox">
+                <p class="tips" id="tips"></p>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="img/logo.png" class="migulogo" id="drop-logo">
+                </div>
+                <a href="javascript: void(0)" class="friendPay" id="drop-friendPay" style="display: none;">好友代付 >></a>
+            </div>
+        </div>
+        <div class="rights">
+            <ul>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_1.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_2.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_3.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="payDetail" id="yslide-payDetail">
+        <div class="close">
+            <img src="img/closeNavBtn_m.png" id="yslide-close">
+        </div>
+        <div class="pay-info-text">
+            <img class="icon" src="img/title_icon.png">
+            <div class="pay-info-text-detail"></div>
+        </div>
+        <div class="content">
+            <div class="phone-info">
+                <span class="phone-info-star" id="yslide-payPhone"></span>
+            </div>
+            <div id="yslideImgDiv" class="yslideImgDiv">
+                <img id="yslide-backImg" class="ypic-backImg" src="">
+                <img id="ypic-loading" class="ypic-loading" src="./img/loading.gif">
+                <img id="yslide-blockImg" class="yslide-blockImg" src="">
+                <img class="ypic-failImg" src="./img/net-fail1.png">
+                <div id="yslide-refresh" class="ypic-refresh">
+                    <a class="refresh-img"></a>
+                </div>
+                <div id="yslide-notice" class="yslide-notice"></div>
+            </div>
+            <div class="yslider">
+                <div class="yslideDiv">
+                    <div class="yslideIndicator"></div>
+                    <div id="yslideArrow" class="yslideArrow">
+                        <div class="arrowImg">
+                            <div class="arrow-item"></div>
+                            <div class="arrow-item"></div>
+                            <div class="arrow-item"></div>
+                        </div>
+                    </div>
+                    <div class="yslideSquare">
+                        <span class="spantips">向右拖动滑块填充拼图</span>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <span class="price-num" id="yslide-fee"></span>
+                <span class="fun-price"></span>
+            </div>
+            <div class="tipsbox">
+                <p class="tips" id="tips"></p>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="img/logo.png" class="migulogo" id="yslide-logo">
+                </div>
+                <a href="javascript: void(0)" class="friendPay" id="yslide-friendPay" style="display: none;">好友代付 >></a>
+            </div>
+        </div>
+        <div class="rights">
+            <ul>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_1.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_2.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_3.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="payDetail" id="ypick-payDetail">
+        <div class="close">
+            <img src="img/closeNavBtn_m.png" id="ypick-close">
+        </div>
+        <div class="pay-info-text">
+            <img class="icon" src="img/title_icon.png">
+            <div class="pay-info-text-detail"></div>
+        </div>
+        <div class="content">
+            <div class="phone-info">
+                <span class="phone-info-star" id="ypick-payPhone"></span>
+            </div>
+            <div id="ypickImgDiv" class="ypickImgDiv">
+                <img id="ypick-backImg" class="ypic-backImg" src="">
+                <img id="ypic-loading" class="ypic-loading" src="./img/loading.gif">
+                <img class="ypic-failImg" src="./img/net-fail1.png">
+                <div id="ypick-notice" class="ypick-notice"></div>
+            </div>
+            <div class="yquest">
+                <div class="yquestDiv">
+                    <div class="yquestSquare">
+                        <span id="pickTips" class="spantips">请依次点击：</span>
+                        <img id="ypick-quest" class="quest">
+                        <div id="ypick-refresh" class="ypic-refresh">
+                            <a class="refresh-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <span class="price-num" id="ypick-fee"></span>
+                <span class="fun-price"></span>
+            </div>
+            <div class="tipsbox">
+                <p class="tips" id="tips"></p>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="img/logo.png" class="migulogo" id="ypick-logo">
+                </div>
+                <a href="javascript: void(0)" class="friendPay" id="ypick-friendPay" style="display: none;">好友代付 >></a>
+            </div>
+        </div>
+        <div class="rights">
+            <ul>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_1.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_2.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_3.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="payDetail" id="yspace-payDetail">
+        <div class="close">
+            <img src="img/closeNavBtn_m.png" id="yspace-close">
+        </div>
+        <div class="pay-info-text">
+            <img class="icon" src="img/title_icon.png">
+            <div class="pay-info-text-detail"></div>
+        </div>
+        <div class="content">
+            <div class="phone-info">
+                <span class="phone-info-star" id="yspace-payPhone"></span>
+            </div>
+            <div id="yspaceImgDiv" class="yspaceImgDiv">
+                <img id="yspace-backImg" class="ypic-backImg" src="">
+                <img id="ypic-loading" class="ypic-loading" src="./img/loading.gif">
+                <img class="ypic-failImg" src="./img/net-fail1.png">
+                <div id="yspace-notice" class="yspace-notice"></div>
+            </div>
+            <div class="yquest">
+                <div class="yquestDiv">
+                    <div class="yquestSquare">
+                        <span id="spaceTips" class="spantips">请选择:</span>
+                        <span id="yspace-quest" class="quest"></span>
+                        <div id="yspace-refresh" class="ypic-refresh">
+                            <a class="refresh-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <span class="price-num" id="yspace-fee"></span>
+                <span class="fun-price"></span>
+            </div>
+            <div class="tipsbox">
+                <p class="tips" id="tips"></p>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="img/logo.png" class="migulogo" id="yspace-logo">
+                </div>
+                <a href="javascript: void(0)" class="friendPay" id="yspace-friendPay" style="display: none;">好友代付 >></a>
+            </div>
+        </div>
+        <div class="rights">
+            <ul>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_1.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_2.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="img/desc_icon_3.png" alt="">
+                    </div>
+                    <div class="item-desc"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="payDetail" id="black-payDetail">
+        <div class="close">
+            <img src="img/closeNavBtn_m.png" id="black-close">
+        </div>
+        <div class="pay-info-text">
+            <img class="icon" src="img/title_icon.png">
+            <div class="pay-info-blacktext-detail">
+                <span class="phone-info-text">请确认是否使用手机的话费进行支付</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="notice">
+                <span id="black-notice"></span>
+            </div>
+            <div class="payTip">
+                <span class="phone-info-star" id="black-payPhone"></span>
+            </div>
+            <div class="inputArea inputSmsArea">
+                <div class="inputPhone">
+                    <input type="text" id="black-sms-input" maxlength="6" placeholder="输入短信验证码">
+                </div>
+                <a href="javascript:;" id="black-get-code" class="sms-code-bright">获取验证码</a>
+            </div>
+            <div class="okPay">
+                <a href="javascript:;" id="black-okPay" class="textgray">确认</a>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="img/logo.png" class="migulogo" id="black-logo">
+                </div>
+                <a href="javascript: void(0)" class="friendPay" id="black-friendPay" style="display: none;">好友代付 >></a>
+            </div>
+        </div>
+    </div>
+    <div class="payDetail" id="quit-payDetail">
+        <div class="close">
+            <img src="img/closeNavBtn_m.png" id="quit-close">
+        </div>
+        <div class="pay-info-text">
+            <img class="icon" src="img/title_icon.png">
+            <div class="pay-info-quittext-detail">
+                <span class="phone-info-text">提示：您即将进行业务退订</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="notice">
+                <span id="quit-notice"></span>
+            </div>
+            <div class="payTip">
+                <span class="phone-info-star" id="quit-payPhone"></span>
+            </div>
+            <div class="inputArea inputSmsArea">
+                <div class="inputPhone">
+                    <input type="text" id="quit-sms-input" maxlength="6" placeholder="输入短信验证码">
+                </div>
+                <a href="javascript:;" id="quit-get-code" class="sms-code-bright">获取验证码</a>
+            </div>
+            <div class="okPay">
+                <a href="javascript:;" id="quit-okPay" class="textgray">确认退订</a>
+            </div>
+            <div class="title">
+                <span class="price-num" id="onekey-fee" style="display: none;"></span>
+                <span class="fun-price"></span>
+            </div>
+            <div class="tipsbox">
+                <p class="tips" id="tips"></p>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="img/logo.png" class="migulogo" id="black-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var asc = document.createElement('script');
+        asc.src = "/../rocher/websdkics.js?v=" + Math.random();
+        asc.crossOrigin = 'anonymous';
+        document.body.appendChild(asc);
+    </script>
+</body>
+</html>
